@@ -30,7 +30,8 @@ Before starting with project, please headover to [CRA](https://github.com/facebo
 
 - Scss
 - [Domain-style](https://github.com/reactjs/redux/blob/master/docs/faq/CodeStructure.md) for code structure
-
+- Bundle Size analysis
+- Code splitting with [react-loadable](https://github.com/jamiebuilds/react-loadable)
 
 ## Getting Started
 
@@ -44,7 +45,6 @@ Before starting with project, please headover to [CRA](https://github.com/facebo
 or
 `$ yarn install` (if you are using yarn)
 
-
 3. Now start dev server by running -
 
 `$ npm run start`
@@ -57,7 +57,12 @@ To create production ready codes -
 
 `$ npm run build`
 
+5. Analyze source code / bundle size
+
+`$ npm run analyze`
+
 for more commands refer `package.json`
+
 
 ## Roadmap
 
@@ -140,6 +145,33 @@ example - `src/home/style.css`
 
 Finally you can import that css file in `index.js` file
 example - `src/home/index.js` will import `src/home/style.css`
+
+## Analyzing the Bundle Size
+
+We can Analyze and debug JavaScript (or Sass or LESS) code bloat through source maps and [source-map-explorer](https://www.npmjs.com/package/source-map-explorer) great tool for this.
+
+The source map explorer determines which file each byte in your minified code came from. It shows you a treemap visualization to help you debug where all the code is coming from.
+
+To analyzing bundle, run command -
+
+`$ npm run analyze` / `$ yarn analyze`
+
+
+## Code splitting
+
+Create React App(CRA) by default bundle out entire app into single main.*.js file with Webpack. As our app grows, bundle grows. So instead of downloading the entire app(This hurts the initial load time of our app.) before users can use it, We can split code into small chunks which we can then load on demand and Code splitting is really helpful for larger React apps.
+
+Check out [this](https://mohandere.github.io/mplayground/#/blog/post/2018/03/01/analyzing-the-bundle-size-code-splitting-in-create-react-app/).  example for how to implementation Code splitting and how it helps to load application faster.
+
+This boilerplate using (react-loadable)[https://github.com/jamiebuilds/react-loadable] for code splitting.
+
+Open `src/App.js` and edit this line to -
+
+`import routes from './routes';`
+
+ To
+
+`import routes from './asyncRoutes';`
 
 ## Deployment
 
