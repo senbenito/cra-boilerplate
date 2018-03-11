@@ -18,15 +18,16 @@ Before starting with project, please headover to [CRA](https://github.com/facebo
 
 - [React js - ^16.2.0](https://facebook.github.io/react/)
 - [Redux js - ^3.7.2](http://redux.js.org/)
-- [reactstrap - Easy to use React Bootstrap 4 components](https://reactstrap.github.io/)
-- [redux-observable - ^0.18.0](https://redux-observable.js.org)
 - [react-router - ^4.1.2](https://github.com/ReactTraining/react-router)
 - [react-redux - ^5.0.6](https://github.com/reactjs/react-redux)
 - [react-router-dom - ^4.2.2](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)
 - [react-router-redux - ^5.0.0-alpha.6](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-redux)
-- [rxjs - ^5.4.3](http://reactivex.io/rxjs/)
+- [redux-observable - ^0.18.0](https://redux-observable.js.org)
+- [reactstrap - Easy to use React Bootstrap 4 components](https://reactstrap.github.io/)
+- [react-loadable](https://github.com/jamiebuilds/react-loadable)
 
-#### Added
+
+#### Features
 
 - Scss
 - [Domain-style](https://github.com/reactjs/redux/blob/master/docs/faq/CodeStructure.md) for code structure
