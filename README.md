@@ -164,7 +164,7 @@ Create React App(CRA) by default bundle out entire app into single main.*.js fil
 
 Check out [this](https://mohandere.github.io/mplayground/#/blog/post/2018/03/01/analyzing-the-bundle-size-code-splitting-in-create-react-app/).  example for how to implementation Code splitting and how it helps to load application faster.
 
-This boilerplate using (react-loadable)[https://github.com/jamiebuilds/react-loadable] for code splitting.
+This boilerplate using [react-loadable](https://github.com/jamiebuilds/react-loadable) for code splitting.
 
 Open `src/App.js` and edit this line to -
 
